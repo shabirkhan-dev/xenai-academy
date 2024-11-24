@@ -15,12 +15,14 @@
     "react-dom": "19.0.0-rc-66855b96-20241106"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
-    "@repo/biome-config": "workspace:*",
     "@biomejs/biome": "1.9.4",
+    "@repo/biome-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
     "@types/node": "22.9.3",
     "@types/react": "18.3.1",
     "@types/react-dom": "18.3.0",
+    "@tailwindcss/postcss": "4.0.0-beta.2",
+    "tailwindcss": "4.0.0-beta.2",
     "typescript": "5.5.4"
   }
 }
