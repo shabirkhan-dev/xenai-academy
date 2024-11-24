@@ -1,0 +1,29 @@
+{
+  "name": "express-starter-kit",
+  "module": "index.ts",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/bun": "latest",
+    "@types/express": "5"
+  },
+  "scripts": {
+    "dev": "bun run --hot src/server.ts",
+    "format": "biome format --write ./src",
+    "lint": "biome lint ./src",
+    "check": "biome check ./src",
+    "check:fix": "biome check --apply ./src",
+    "ci": "biome ci ./src"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "chalk": "^5.3.0",
+    "cors": "^2.8.5",
+    "express": "5",
+    "zod": "^3.23.8"
+  }
+
+}
