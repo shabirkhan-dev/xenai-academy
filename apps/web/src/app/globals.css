@@ -1,0 +1,97 @@
+@import "tailwindcss";
+:root {
+  --background: hsl(224 71% 4%);
+  --foreground: hsl(213 31% 91%);
+
+  --muted: hsl(223 47% 11%);
+  --muted-foreground: hsl(215.4 16.3% 56.9%);
+
+  --accent: hsl(216 34% 17%);
+  --accent-foreground: hsl(210 40% 98%);
+
+  --popover: hsl(224 71% 4%);
+  --popover-foreground: hsl(215 20.2% 65.1%);
+
+  --border: hsl(216 34% 17%);
+  --input: hsl(216 34% 17%);
+
+  --card: hsl(224 71% 4%);
+  --card-foreground: hsl(213 31% 91%);
+
+  --primary: hsl(210 40% 98%);
+  --primary-foreground: hsl(222.2 47.4% 1.2%);
+
+  --secondary: hsl(222.2 47.4% 11.2%);
+  --secondary-foreground: hsl(210 40% 98%);
+
+  --destructive: hsl(0 63% 31%);
+  --destructive-foreground: hsl(210 40% 98%);
+
+  --ring: hsl(216 34% 17%);
+}
+
+  @theme {
+  --color-mint-green: oklch(83.66% 0.125 176.45);
+  --color-baby-blue: oklch(85.61% 0.094 225.87);
+  /* Shadcn UI */
+  --color-mint-green: oklch(83.66% 0.125 176.45);
+  --color-baby-blue: oklch(85.61% 0.094 225.87);
+  /* Shadcn UI */
+  --radius: 0.5rem;
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+
+  --font-family-poppins: var(--font-poppins);
+  --font-family-inter: var(--font-inter);
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+
+    to {
+      height: "0";
+    }
+  }
+}
