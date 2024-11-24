@@ -1,0 +1,42 @@
+pre-commit:
+  commands:
+    format:
+      skip:
+        - "*.min.*"
+        - "node_modules/"
+        - "index.html"
+        - "vite.svg"
+        - "package.json"
+        - "package-lock.json"
+        - "README.md"
+        - "lefthook.yml"
+        - "pnpm-lock.yaml"
+        - "tsconfig.json"
+        - "tsconfig.node.json"
+        - "tsconfig.app.json"
+        - "*.css"
+      glob: "./src/**/*.{js,ts,jsx,tsx}"
+      run: npx biome format --write {staged_files}
+    lint:
+      skip:
+        - "*.min.*"
+        - "node_modules/"
+        - "index.html"
+        - "vite.svg"
+        - "package.json"
+        - "package-lock.json"
+        - "README.md"
+        - "lefthook.yml"
+        - "pnpm-lock.yaml"
+        - "tsconfig.json"
+        - "tsconfig.node.json"
+        - "tsconfig.app.json"
+        - "./src/main.tsx"
+
+      glob: "./src/**/*.{js,ts,jsx,tsx}"
+      run: npx biome check --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {staged_files}
+    prevent-bad-commit:
+      run: test -n "$(git diff --cached --name-only)"
+      skip:
+        - merge
+        - rebase

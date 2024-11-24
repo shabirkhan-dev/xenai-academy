@@ -10,19 +10,17 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@repo/ui": "workspace:*",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "^20",
+    "@repo/biome-config": "workspace:*",
+    "@biomejs/biome": "1.9.4",
+    "@types/node": "22.9.3",
     "@types/react": "18.3.1",
     "@types/react-dom": "18.3.0",
-    "eslint": "^8",
-    "eslint-config-next": "15.0.3",
     "typescript": "5.5.4"
   }
 }
